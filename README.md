@@ -1,9 +1,12 @@
 # Empleados
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+
 es parte del Front todo lo que no esta en el folder de Fromulario
 
 el folder formulario es de sprintFramework que es la parte del backend
+
+no se incluye las carpeta node_modules de angular porfavor a considerar
 
 ## Development server
 
