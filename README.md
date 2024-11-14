@@ -1,14 +1,21 @@
 # Empleados
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+es parte del Front todo lo que no esta en el folder de Fromulario
+
+el folder formulario es de sprintFramework que es la parte del backend
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+la base de datos es H2 con la extencion de Spring
+
+las pruebas se hicieron en un servidor local y por medio de postman se llevaron a cabo que el url aceoptara las instrucciones get and post
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+los componentes son generados desde angular y con instalaciones (json, @popper, boststrap, sweetalert2)
 
 ## Build
 
