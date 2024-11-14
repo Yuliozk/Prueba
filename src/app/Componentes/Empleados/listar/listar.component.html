@@ -1,0 +1,45 @@
+<nav class="navbar">
+    <ul class="nav-list">
+        <label class="nav-item"><a class="nav.link" (click)="listar()">Empleados</a></label>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="car">
+        <div class="card-header text-center">
+            <h2>Empleados</h2>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO PATERNO</th>
+                        <th>APELLIDO MATERNO</th>
+                        <th>CURP</th>
+                        <th>TELEFONNO</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    @for (empleado of empleados; track empleado.idEmpleado) {
+                        <tr class="text-center">
+                            <td>{{empleado.idEmpleado}}</td>
+                            <td>{{empleado.nombre}}</td>
+                            <td>{{empleado.aPaterno}}</td>
+                            <td>{{empleado.aMaterno}}</td>
+                            <td>{{empleado.curp}}</td>
+                            <td>{{empleado.telefono}}</td>
+                            <td>
+                                <button class="btn btn-dark" (click)="editar(empleado)">EDITAR</button>
+                                <button class="btn btn-dark mx-2" (click)="eliminar(empleado)">ELIMINAR</button>
+                            </td>
+                        </tr>
+                    }@empty {
+                        <td colspan="8" class="text-center">NO EXITEN REGISTROS DE PRODUCTOS.</td>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

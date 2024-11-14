@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>EDITAR DE EMPLEADO</h2>
+        </div>
+        <div class="card body">
+            <form>
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="number" class="form-control" name="id" [(ngModel)]="empleado.idEmpleado"readOnly>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="empleado.nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="aPaterno">APELLIDO PATERNO</label>
+                    <input type="text" class="form-control" name="aPaterno" [(ngModel)]="empleado.aPaterno">
+                </div>
+
+                <div class="form-group">
+                    <label for="aMaterno">APELLIDO MATERNO</label>
+                    <input type="text" class="form-control" name="aMaterno" [(ngModel)]="empleado.aMaterno">
+                </div>
+                <div class="form-group">
+                    <label for="curp">CURP</label>
+                    <input type="text" class="form-control" name="curp" [(ngModel)]="empleado.curp">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">TELEFONO</label>
+                    <input type="number" class="form-control" name="telefono" [(ngModel)]="empleado.telefono">
+                </div>
+                <br>
+                <button class="btn btn-outline-dark" (click)="editar()">GUARDAR CAMBIOS</button>
+                <button class="btn btn-outline-dark mx-2" (click)="cancelar()">CANCELAR</button>
+            </form>
+        </div>
+    </div>
+</div>

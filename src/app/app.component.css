@@ -1,0 +1,36 @@
+.diseño{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.893);
+}
+
+.title-container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    color: aliceblue;
+    display: flex; 
+    align-items: center;
+}
+
+.brand-image {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+
+.btn {
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    border: 2px solid transparent;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+}
